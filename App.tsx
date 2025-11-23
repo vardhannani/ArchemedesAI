@@ -60,7 +60,7 @@ const App: React.FC = () => {
               <span className="block text-sm leading-snug">{error}</span>
               {error.includes('API key') && (
                 <div className="mt-2 text-[10px] text-red-600">
-                  Define <code className="font-mono">VITE_API_KEY</code> in <code className="font-mono">.env.local</code> then restart dev server.
+                  Define <code className="font-mono">VITE_GEMINI_API_KEY</code> in <code className="font-mono">.env.local</code> then restart dev server.
                 </div>
               )}
               <button

@@ -34,7 +34,7 @@ index.css               # Tailwind directives + custom utilities
 ## Environment Setup
 Create a `.env.local` file in the project root:
 ```
-VITE_API_KEY=your_api_key_here
+VITE_GEMINI_API_KEY=your_api_key_here
 ```
 Restart the development server after adding or changing the key. An in-app notification will appear if the key is missing.
 

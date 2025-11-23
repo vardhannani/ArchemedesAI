@@ -2,16 +2,16 @@ import { GoogleGenAI, Type, Schema } from "@google/genai";
 import { ResearchParams, ResearchReport, ExperimentalPlan, ChatMessage, PaperComparison, Citation, KnowledgeGraph } from '../types';
 
 // Initialize the client with the API key from Vite environment variables.
-// Uses `VITE_API_KEY` (set in .env). Provides a clear runtime error if missing.
-const apiKey = import.meta.env.VITE_API_KEY as string | undefined;
+// Uses `VITE_GEMINI_API_KEY` (set in .env). Provides a clear runtime error if missing.
+const apiKey = import.meta.env.VITE_GEMINI_API_KEY as string | undefined;
 if (!apiKey) {
-  console.warn("[Archimedes] Missing VITE_API_KEY. API calls will fail until it's set.");
+  console.warn("[Archimedes] Missing VITE_GEMINI_API_KEY. API calls will fail until it's set.");
 }
 const ai = new GoogleGenAI({ apiKey: apiKey || "" });
 
 const ensureApiKey = () => {
   if (!apiKey) {
-    throw new Error("Missing API key (VITE_API_KEY). Set it in a .env file.");
+    throw new Error("Missing API key (VITE_GEMINI_API_KEY). Set it in a .env file.");
   }
 };
 
