@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archimedes AI - Material Science Research Agent</title>
+    <!-- Tailwind processed via PostCSS; stylesheet imported in React entry -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Removed Tailwind CDN config script: theme now defined in tailwind.config.js -->
+    <style>
+      /* Custom Scrollbar for the citation panel */
+      .citation-scroll::-webkit-scrollbar {
+        width: 6px;
+      }
+      .citation-scroll::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      .citation-scroll::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 3px;
+      }
+      .citation-scroll::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+    </style>
+    <!-- Removed importmap: using local npm dependencies bundled by Vite -->
+<!-- Removed direct stylesheet link; Vite will bundle Tailwind via import in index.tsx -->
+</head>
+  <body class="bg-science-50 text-science-900 antialiased h-screen overflow-hidden">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
