@@ -1,7 +1,3 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
-
 # Archimedes – Material Science Literature Review Agent
 
 Archimedes is a React + TypeScript single-page application that accelerates Material Science R&D by transforming a research goal into an executive literature review, knowledge graph, experimental protocol, and comparative matrix using a powerful analysis engine.
